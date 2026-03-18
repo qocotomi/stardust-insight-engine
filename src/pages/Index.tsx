@@ -30,6 +30,9 @@ const Index = () => {
         />
       </div>
 
+      {/* Stars overlay */}
+      <Starfield />
+
       {/* Content */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4">
         <h1 className="font-display text-[clamp(4rem,15vw,12rem)] leading-[0.85] tracking-[0.04em] text-foreground select-none">
