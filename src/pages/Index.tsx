@@ -35,7 +35,7 @@ const Index = () => {
           ALKU AI
         </h1>
         <p className="mt-6 text-sm tracking-[0.35em] uppercase text-muted-foreground">
-          <SpecialText speed={30} delay={0.5}>
+          <SpecialText speed={30} delay={0.8} inView once>
             Make informed decisions — first
           </SpecialText>
         </p>
