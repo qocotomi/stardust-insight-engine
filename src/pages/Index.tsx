@@ -1,5 +1,6 @@
 import AnimatedGradient from "@/components/ui/animated-gradient";
 import { SpecialText } from "@/components/ui/special-text";
+import Starfield from "@/components/Starfield";
 
 const Index = () => {
   return (
@@ -28,6 +29,9 @@ const Index = () => {
           className="w-full h-full"
         />
       </div>
+
+      {/* Stars overlay */}
+      <Starfield />
 
       {/* Content */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4">
