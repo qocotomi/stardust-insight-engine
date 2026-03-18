@@ -43,7 +43,7 @@ const Index = () => {
             Make informed decisions — first
           </SpecialText>
         </p>
-        <p className="absolute bottom-10 text-xs tracking-[0.4em] uppercase text-muted-foreground/60">
+        <p className="absolute bottom-10 text-sm tracking-[0.4em] uppercase text-muted-foreground">
           <SpecialText speed={25} delay={2.5} inView once>
             Coming — Fall 2026
           </SpecialText>
