@@ -1,7 +1,26 @@
-"use client";
+import { useEffect, useRef, useState, useCallback } from "react";
 
-import { useEffect, useRef, useState } from "react";
-import { useInView } from "motion/react";
+function useInView(ref: React.RefObject<Element | null>, { once = true, margin = "0px" } = {}) {
+  const [inView, setInView] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          if (once) observer.disconnect();
+        } else if (!once) {
+          setInView(false);
+        }
+      },
+      { rootMargin: margin }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [ref, once, margin]);
+  return inView;
+}
 
 interface SpecialTextProps {
   children: string;
