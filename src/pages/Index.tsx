@@ -36,9 +36,7 @@ const Index = () => {
       {/* Content */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4">
         <h1 className="font-display text-[clamp(4rem,15vw,12rem)] leading-[0.85] tracking-[0.04em] text-foreground select-none">
-          <SpecialText speed={30} delay={0.8} inView once>
-            ALKU AI
-          </SpecialText>
+          ALKU AI
         </h1>
         <p className="mt-6 text-sm tracking-[0.35em] uppercase text-muted-foreground">
           <SpecialText speed={30} delay={0.8} inView once>
