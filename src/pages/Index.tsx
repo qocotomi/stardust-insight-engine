@@ -1,4 +1,5 @@
 import StardustCanvas from "@/components/StardustCanvas";
+import { SpecialText } from "@/components/ui/special-text";
 
 const Index = () => {
   return (
@@ -21,8 +22,10 @@ const Index = () => {
         >
           ALKU AI
         </h1>
-        <p className="mt-6 text-sm tracking-[0.35em] uppercase text-muted-foreground font-light">
-          Make informed decisions — first
+        <p className="mt-6 text-sm tracking-[0.35em] uppercase text-muted-foreground">
+          <SpecialText speed={30} delay={0.5}>
+            Make informed decisions — first
+          </SpecialText>
         </p>
       </div>
     </div>
