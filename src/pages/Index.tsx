@@ -1,5 +1,6 @@
 import AnimatedGradient from "@/components/ui/animated-gradient";
 import { SpecialText } from "@/components/ui/special-text";
+import Starfield from "@/components/Starfield";
 
 const Index = () => {
   return (
