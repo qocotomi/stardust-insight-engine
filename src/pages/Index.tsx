@@ -9,20 +9,20 @@ const Index = () => {
         <AnimatedGradient
           config={{
             preset: "custom",
-            color1: "#050505",
-            color2: "#3B82F6",
-            color3: "#050505",
+            color1: "#000000",
+            color2: "#1a0a2e",
+            color3: "#ff4500",
             rotation: -50,
-            proportion: 8,
+            proportion: 5,
             scale: 0.01,
-            speed: 15,
-            distortion: 0,
-            swirl: 50,
-            swirlIterations: 16,
-            softness: 60,
+            speed: 12,
+            distortion: 3,
+            swirl: 55,
+            swirlIterations: 18,
+            softness: 75,
             offset: -299,
             shape: "Checks",
-            shapeSize: 45,
+            shapeSize: 50,
           }}
           noise={{ opacity: 0.03, scale: 1 }}
           className="w-full h-full"
