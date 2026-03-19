@@ -12,7 +12,7 @@ const Index = () => {
       <BlackHole />
 
       {/* Top-left branding */}
-      <div className="fixed top-8 left-8 z-10">
+      <div className="fixed top-16 left-16 z-10">
         <h1 className="font-display text-[clamp(2rem,5vw,4rem)] leading-[0.9] tracking-[0.04em] text-foreground select-none">
           ALKU AI
         </h1>
