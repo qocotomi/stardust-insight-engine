@@ -1,44 +1,15 @@
-import AnimatedGradient from "@/components/ui/animated-gradient";
 import { SpecialText } from "@/components/ui/special-text";
 import Starfield from "@/components/Starfield";
-import StardustCanvas from "@/components/StardustCanvas";
+import BlackHole from "@/components/BlackHole";
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-background">
-      {/* Animated gradient background */}
-      <div className="fixed inset-0 z-0">
-        <AnimatedGradient
-          config={{
-            preset: "custom",
-            color1: "#000000",
-            color2: "#1a0a2e",
-            color3: "#ff4500",
-            rotation: -50,
-            proportion: 5,
-            scale: 0.01,
-            speed: 12,
-            distortion: 3,
-            swirl: 55,
-            swirlIterations: 18,
-            softness: 75,
-            offset: -299,
-            shape: "Checks",
-            shapeSize: 50,
-          }}
-          noise={{ opacity: 0.03, scale: 1 }}
-          className="w-full h-full"
-        />
-      </div>
-
-      {/* Stars overlay */}
+    <div className="relative min-h-screen overflow-hidden bg-black">
+      {/* Stars */}
       <Starfield />
 
-      {/* Content */}
-      {/* Cosmic genesis center piece */}
-      <div className="relative z-[2] flex min-h-screen items-center justify-center">
-        <StardustCanvas />
-      </div>
+      {/* Black hole centerpiece */}
+      <BlackHole />
 
       {/* Top-left branding */}
       <div className="fixed top-8 left-8 z-10">
