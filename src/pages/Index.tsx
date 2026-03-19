@@ -34,16 +34,26 @@ const Index = () => {
       <Starfield />
 
       {/* Content */}
-      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4">
-        <h1 className="font-display text-[clamp(4rem,15vw,12rem)] leading-[0.85] tracking-[0.04em] text-foreground select-none">
+      {/* Cosmic genesis center piece */}
+      <div className="relative z-[2] flex min-h-screen items-center justify-center">
+        <StardustCanvas />
+      </div>
+
+      {/* Top-left branding */}
+      <div className="fixed top-8 left-8 z-10">
+        <h1 className="font-display text-[clamp(2rem,5vw,4rem)] leading-[0.9] tracking-[0.04em] text-foreground select-none">
           ALKU AI
         </h1>
-        <p className="mt-6 text-sm tracking-[0.35em] uppercase text-muted-foreground">
+        <p className="mt-3 text-xs tracking-[0.35em] uppercase text-muted-foreground">
           <SpecialText speed={30} delay={0.8} inView once>
             Make informed decisions — first
           </SpecialText>
         </p>
-        <p className="absolute bottom-10 text-sm tracking-[0.4em] uppercase text-muted-foreground">
+      </div>
+
+      {/* Bottom center */}
+      <div className="fixed bottom-10 left-1/2 -translate-x-1/2 z-10">
+        <p className="text-sm tracking-[0.4em] uppercase text-muted-foreground">
           <SpecialText speed={25} delay={2.5} inView once>
             Coming — Fall 2026
           </SpecialText>
